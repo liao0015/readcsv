@@ -3,14 +3,14 @@
 #' read a lca csv file and extract information
 #'
 #' @export
-#' @param data_merge data input
+#' @param input data input
 
-read_file <- function(data_merge){
+read_file <- function(input){
 
 
 #data_merge<-read.csv(filename)
 #print(data_merge)
-
+data_merge <- input
 Kingdom_set<-subset(data_merge, select = c("Kingdom", "MS2.count"))
 Phylum_set<-subset(data_merge, select = c("Phylum", "MS2.count"))
 Class_set<-subset(data_merge, select = c("Class", "MS2.count"))
