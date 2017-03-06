@@ -4,10 +4,10 @@
 \alias{read_file}
 \title{LCA analysis}
 \usage{
-read_file(filename)
+read_file(data_merge)
 }
 \arguments{
-\item{filename}{file name}
+\item{data_merge}{data input}
 }
 \description{
 read a lca csv file and extract information
