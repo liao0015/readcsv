@@ -26,7 +26,7 @@ names(Kingdom_sum)[2]<-"sum"
 Kingdom_total<-merge(Kingdom_num, Kingdom_sum)
 names(Kingdom_total)[1]<-"name"
 Kingdom_total<-cbind(Kingdom_total, lca = "kingdom")
-print(Kingdom_total)
+#print(Kingdom_total)
 
 Phylum_num<-aggregate(MS2.count~Phylum, Phylum_set, length)
 names(Phylum_num)[2]<-"num"
@@ -83,5 +83,6 @@ Species_total<-cbind(Species_total, lca = "species")
 #print(Species_total)
 
 df<-rbind(Kingdom_total,phylum_total,Class_total,Order_total,Family_total,Genus_total,Species_total)
+print(df)
 write.csv(df, "lala_output.csv")
 }
